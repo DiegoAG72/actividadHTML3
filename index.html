@@ -12,7 +12,7 @@
     <h3><strong>Formulario de registro</strong></h3>
     <form action="\datos\datos.html" target="_blank">
         <fieldset>
-            <legend>Datos Personales</legend>
+            <legend><strong>Datos Personales</strong></legend><br>
             <label for="nombre">Nombre: </label>
             <input type="text" size="30" name="nombre" placeholder="Ingrese aquí su nombre..."><br><br>
             <label for="apellido">Apellido: </label>
@@ -24,14 +24,57 @@
             <label for="dni">D.N.I.: </label>
             <input type="number" size="30" name="DNI" placeholder="Ingrese aquí su D.N.I..."><br><br>
             <label for="date">Fecha de nacimiento: </label>
-            <input type="date" name="nacim"><br><br>
+            <input type="date" name="nacim"><br>
+            <p>
+                <input type="radio" name="genero" value="hombre">Hombre
+                <input type="radio" name="genero" value="Mujer">Mujer
+                <input type="radio" name="genero" value="Otro"> Otro
+            </p>
         </fieldset>
         <fieldset>
-            <legend>Datos de Contacto</legend>
+            <legend><strong>Estudios Completados</strong></legend><br>
+            <label for="estudios">Estudios: </label>
+            <select id="estudios" name="estudios">
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+                <option value="ninguno">Ninguno</option>
+            </select>
+            <br><br>
         </fieldset>
 
+        <fieldset>
+            <legend><strong>Cursos de Interes</strong></legend>
+            <p>
+                <input type="checkbox" name="conocimientos" value="HTML"> HTML
+                <input type="checkbox" name="conocimientos" value="CSS"> CSS
+                <input type="checkbox" name="conocimientos" value="BOOTSTRAP"> Bootstrap
+                <input type="checkbox" name="conocimientos" value="Javascript"> Javascript
+                <input type="checkbox" name="conocimientos" value="BaseDeDatos"> Base de Datos
+                <input type="checkbox" name="conocimientos" value="Python"> Python
+            </p>
 
 
+
+        </fieldset>
+        <fieldset>
+            <legend><strong>Datos de Contacto</strong></legend><br>
+            <label for="telef">Teléfono: </label>
+            <input type="tel" size="30" name="telef" placeholder="Ingrese aquí su teléfono..."><br><br>
+            <label for="mail">Email: </label>
+            <input type="email" size="30" name="mail" placeholder="Ingrese aquí su email..."><br><br>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Datos Login</strong></legend><br>
+            <label for="user">Nombre de Usuario: </label>
+            <input type="text" size="30" name="user" placeholder="Ingrese aquí su usuario..."><br><br>
+            <label for="pass">Contraseña: </label>
+            <input type="password" size="30" name="pass"><br><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <button type="reset">Reset</button>
 
     </form>
 </body>
